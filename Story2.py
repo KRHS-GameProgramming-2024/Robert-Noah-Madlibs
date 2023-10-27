@@ -2,11 +2,11 @@ from Getters import *
 
 
 
-def Story1(debug=False):
-    if debug: print("Story 1")
+def Story2(debug=False):
+    if debug: print("Story 2")
     
-    out="ERROR"
-    out+="STORY2 UNAVALIBLE"
+    out="------ ERROR ------\n"
+    out+="STORY 2 UNAVALIBLE\n"
     
     
     return out
