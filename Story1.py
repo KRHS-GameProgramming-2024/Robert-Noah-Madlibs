@@ -10,9 +10,9 @@ def Story1(debug=False):
     clear()
     place=getWord("Enter the name of a place ", debug)
     clear()
-    danger=getWord("Enter the name of something dangorus ", debug)
+    danger=getWordAAn("Enter the name of something dangorus ", debug)
     clear()
-    largeObject=getWord("Enter the name of something big ", debug)
+    largeObject=getWordAAn("Enter the name of something big ", debug)
     clear()
     bad=getWord("Enter a horrible way to die: ", debug)
     clear()
@@ -23,9 +23,9 @@ def Story1(debug=False):
     
     out = "\n"
     out += person +" was at/in the "
-    out += place+" and was killed by a(n) "
+    out += place+" and was killed by "
     out += danger +'. \n'
-    out += person+ " was also crushed by a(n) "
+    out += person+ " was also crushed by "
     out += largeObject+".\n"+'That morning, '
     out += person+" barely escaped being "
     out += bad+" to death by "
