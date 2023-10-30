@@ -59,9 +59,21 @@ def getWord(prompt, debug = False):
             goodInput = False
             print("Foul languge detected!")
             print("Bad user, enter a different word, NOT A SWEAR!\n")
-
-
-
+    return word
+    
+    
+def getWordAAn(prompt, debug = False):
+    if debug: print("Get word option a an")
+    
+    word = getWord(prompt, debug)
+    
+    vouals=['a','e','i','o','u']
+    
+    if word[0] in vouals:
+        word = "an "+word
+    else:
+        word = "a "+word
+        
     return word
     
     
