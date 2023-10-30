@@ -1,5 +1,5 @@
 from swearcheck import * 
-
+from swearReplaceMain import *
 
 def getMenuOption(debug = False):
     if debug: print("Get menu option")
@@ -65,3 +65,20 @@ def getWord(prompt, debug = False):
     return word
     
     
+
+def getSwear(prompt, debug = False):
+    if debug: print("getSwear function")
+    goodWord = False
+    while goodWord == False:
+        swear = input(prompt)
+        if isAlsoSwear(swear, False, True):
+            goodWord = True
+            replaceSwear(swear, debug)
+        else: 
+            goodWord = False
+            wantSwear = input("do you just not want to swear? (it's ok if you don't, input 'yes') > ")
+            if wantSwear == "yes": goodWord = True
+    return replaceSwear(swear, debug)
+#robert's little testy bits for getSwear function
+#test=getSwear("swear, please > ", False)
+#print(test)

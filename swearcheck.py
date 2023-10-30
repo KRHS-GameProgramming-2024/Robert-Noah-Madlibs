@@ -1,13 +1,13 @@
 
 
-def isSwear(word, debug=False):
+def isSwear(word, debug=False, wordDetect=False):
     if debug: print("swear checker")
     if word.lower() in swearList:
         return True
     else:
         return False
 
-def allPos(word, debug = False):
+def allPos(word, debug = False, wordDetect=False):
     if debug: print("allpos swear checker")
 
     
@@ -25,18 +25,26 @@ def allPos(word, debug = False):
             t+=i
             if debug: print(t)
             if isSwear(t, debug):
-                print("\nWord detected! Word found is "+t+"!")
+                #gotta disable this for a special getter
+                #I think if !variable should work, but we would 
+                #need to import getters, weird imports might cause
+                #problems. Anyhow, try:
+                # from getters import [what we need to import]
+                #if !specialSwearGetter: print("\nWord detected! string
+                #we also need to add that pos. argu. to whatever functions call that string
+                if not wordDetect:
+                    print("\nWord detected! Word found is "+t+"!") 
                 return True
     return False
 
 
 
 
-def isAlsoSwear(word, debug = False):
-    if debug: print("isalsoswear swear checker")
+def isAlsoSwear(word, debug = False, wordDetect=False):
+    if debug: print("isAlsoSwear swear checker")
     word=word.lower()
     
-    if allPos(word,debug):
+    if allPos(word,debug, wordDetect):
         return True
     
     test1=""
