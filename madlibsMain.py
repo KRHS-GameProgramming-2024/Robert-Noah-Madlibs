@@ -3,6 +3,7 @@ from Getters import *
 from Story1 import *
 from Story2 import *
 from Story3 import *
+from story4SECRET import *
 import os
 clear = lambda: os.system('cls')
 
@@ -30,7 +31,7 @@ def Madlibs(debug = False):
         elif option == "3":
             print(Story3(debug))
         elif option == "4":
-            print(Story4(debug))
+            print(Story4SECRET(debug))
             
         input("Press enter to continue")
         clear()
