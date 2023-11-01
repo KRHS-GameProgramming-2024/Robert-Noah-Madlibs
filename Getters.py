@@ -33,6 +33,12 @@ def getMenuOption(debug = False):
             or option == "story 3"):
                 option = "3"
                 goodInput = True
+        elif (option == "5"
+            or option == "five"
+            or option == "story5"
+            or option == "story 5"):
+                option = "4"
+                goodInput = True
         else:
             print("Invalid option")
     return option

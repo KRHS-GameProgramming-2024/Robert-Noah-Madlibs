@@ -29,6 +29,8 @@ def Madlibs(debug = False):
             print(Story2(debug))
         elif option == "3":
             print(Story3(debug))
+        elif option == "4":
+            print(Story4(debug))
             
         input("Press enter to continue")
         clear()
