@@ -3,7 +3,7 @@ import os
 clear = lambda: os.system('cls')
 
 def Story2(debug=False):
-    if debug: print("this is debug mode \n")
+    if debug: print("this is debug mode of story 2\n")
     noun = getWord("Enter a thing: ", debug)
     clear()
     verb = getWord("Enter a action: ", debug)
@@ -22,14 +22,16 @@ def Story2(debug=False):
     clear()
     cuss =   getSwear("swear please > ", debug)
     clear()
-    letters = "One fine evening, " + person 
+    
+    
+    letters = "One fine evening, " + person
     letters += " had a craving to " + verb + "\n" 
-    letters += " until the sun began to rise. " + person
-    letters += " would do it at the " + event
-    letters += " at " + place + "\n"
-    letters += ", and he would bring a " + sillyThing 
-    letters += ". It was " + color + "."
-    letters += " When " + person + " got to the " + event + " at \n" + place
-    letters += ", the " + monster + " at the door called him a " + cuss + ". \n"
-    letters += person + " went home disappointed."
+    letters += "until the sun began to rise. " + person+"\n"
+    letters += "would do it at the " + event
+    letters += " at " + place + ",\n"
+    letters += "and he would bring a " + sillyThing +". "
+    letters += "It was " + color + ".\n"
+    letters += "When " + person + " got to the " + event + " at " + place+",\n"
+    letters += "the " + monster + " at the door called him a " + cuss + ". \n"
+    letters += person + "went home disappointed.\n"
     return letters

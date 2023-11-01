@@ -1,5 +1,6 @@
 from Getters import *
-
+import os
+clear = lambda: os.system('cls')
 
 
 def Story3(debug=False):

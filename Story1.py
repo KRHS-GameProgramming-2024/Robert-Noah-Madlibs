@@ -21,7 +21,7 @@ def Story1(debug=False):
     
     
     
-    out = "\n"
+    out = ""
     out += person +" was at/in the "
     out += place+" and was killed by "
     out += danger +'. \n'
