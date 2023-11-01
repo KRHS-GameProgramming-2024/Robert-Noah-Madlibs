@@ -3,7 +3,7 @@ import os
 clear = lambda: os.system('cls')
 
 def Story2(debug=False):
-    if debug: print("this is debug mode \n")
+    if debug: print("this is debug mode of story 2\n")
     noun = getWord("Enter a thing: ", debug)
     clear()
     verb = getWord("Enter a action: ", debug)
