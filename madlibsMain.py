@@ -30,8 +30,11 @@ def Madlibs(debug = False):
             print(Story3(debug))
         elif option == "4":
             print(Story4SECRET(debug))
+<<<<<<< HEAD
             audioPlay()
             
+=======
+>>>>>>> origin/main
             
         input("Press enter to continue")
         clear()
