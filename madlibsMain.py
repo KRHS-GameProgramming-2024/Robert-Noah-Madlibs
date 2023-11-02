@@ -7,8 +7,6 @@ from story4SECRET import *
 import os
 clear = lambda: os.system('cls')
 
-
-
 def Madlibs(debug = False):
     if debug: print("Welcome to madlibs debuging")
     clear()
@@ -32,6 +30,8 @@ def Madlibs(debug = False):
             print(Story3(debug))
         elif option == "4":
             print(Story4SECRET(debug))
+            audioPlay()
+            
             
         input("Press enter to continue")
         clear()
