@@ -63,7 +63,7 @@ def audioPlay():
     ################################
     #IMPORTANT!!!!!
     
-    #Music by https://www.bensound.com/free-music-for-videos
-    #License code: GWO146E7PADF46JS
+    #Music I Use: Bensound.com/free-music-for-videos
+    #License code: QYHFL1RRSO9JBEBZ
     
     
