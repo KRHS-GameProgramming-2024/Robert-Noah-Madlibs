@@ -1,5 +1,6 @@
 from swearcheck import * 
 from swearReplaceMain import *
+import imdb
 
 def getMenuOption(debug = False):
     if debug: print("Get menu option")
@@ -97,3 +98,43 @@ def getSwear(prompt, debug = False):
 #robert's little testy bits for getSwear function
 #test=getSwear("swear, please > ", False)
 #print(test)
+
+#ryab reynolds movie getter
+#Imported imdb at the top. 
+#ia = imdb.Cinemagoer()
+#
+#
+#rr = ia.get_person('0005351')
+#roles = rr['filmography']['actor']
+#titles = []
+#for role in roles:
+#	titles += [role["title"].lower()]
+#this is copied and works.
+#grab ryan reynolds on imdb, find movies where he is actor. 
+#make list
+#get input
+#if input lower is in the list, good input
+#else, try again
+#use that as madlib word
+
+def getRyanReynoldsMovie(prompt = "000", debug = False):
+    if debug: print("getRyanReynoldsMovie function")
+    ia = imdb.Cinemagoer()
+
+
+    rr = ia.get_person('0005351')
+    roles = rr['filmography']['actor']
+    titles = []
+    for role in roles:
+        titles += [role["title"].lower()]
+    goodInput = False
+    while goodInput == False:
+        rrMovieInput = input(prompt)
+        if rrMovieInput.lower() in titles:
+            goodInput = True
+            if debug: print("goodInput set to true"), print(rrMovieInput)
+            return rrMovieInput
+        else: goodInput = False, print("goodInput set to false") 
+
+testOutput = getRyanReynoldsMovie("test it broski > ", True)
+print(testOutput)
