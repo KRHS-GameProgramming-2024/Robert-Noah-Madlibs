@@ -128,7 +128,7 @@ def getRyanReynoldsMovie(prompt = "000", debug = False):
     for role in roles:
         titles += [role["title"].lower()]
     goodInput = False
-    while goodInput == False:
+    while not goodInput:
         rrMovieInput = input(prompt)
         if rrMovieInput.lower() in titles:
             goodInput = True
