@@ -1,6 +1,12 @@
 from swearcheck import * 
 from swearReplaceMain import *
-import imdb
+hasImdb = False
+try:
+    import imdb
+    hasImdb = True
+    
+except:
+    print("please do 'pip install IMDbPY' to get the full experience")
 
 def getMenuOption(debug = False):
     if debug: print("Get menu option")
@@ -119,27 +125,31 @@ def getSwear(prompt, debug = False):
 
 def getRyanReynoldsMovie(prompt = "000", debug = False):
     if debug: print("getRyanReynoldsMovie function")
-    ia = imdb.Cinemagoer()
+    if hasImdb:
+        ia = imdb.Cinemagoer()
 
 
-    rr = ia.get_person('0005351')
-    roles = rr['filmography']['actor']
-    titles = []
-    for role in roles:
-        titles += [role["title"].lower()]
-    goodInput = False
-    while not goodInput:
-        rrMovieInput = input(prompt)
-        if rrMovieInput.lower() in titles:
-            goodInput = True
-            if debug: print("goodInput set to true") 
-            print(rrMovieInput)
-            
-        else: 
-            goodInput = False
-            print("Not a Ryan Reynolds movie, try again.") 
-            if debug: print("goodInput set to false") 
+        rr = ia.get_person('0005351')
+        roles = rr['filmography']['actor']
+        titles = []
+        for role in roles:
+            titles += [role["title"].lower()]
+        goodInput = False
+        while not goodInput:
+            rrMovieInput = input(prompt)
+            if rrMovieInput.lower() in titles:
+                goodInput = True
+                if debug: print("goodInput set to true") 
+                print(rrMovieInput)
+                
+            else: 
+                goodInput = False
+                print("Not a Ryan Reynolds movie, try again.") 
+                if debug: print("goodInput set to false") 
+    else:
+        print("I can't do this without you install the full experience so I pick the movie now")
+        rrMovieInput = The Fellowship of the Ring
 
     return rrMovieInput
-testOutput = getRyanReynoldsMovie("test it broski > ", True)
-print(testOutput)
+#testOutput = getRyanReynoldsMovie("test it broski > ", True)
+#print(testOutput)
