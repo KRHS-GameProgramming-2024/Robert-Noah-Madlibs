@@ -148,8 +148,28 @@ def getRyanReynoldsMovie(prompt = "000", debug = False):
                 if debug: print("goodInput set to false") 
     else:
         print("I can't do this without you install the full experience so I pick the movie now")
-        rrMovieInput = The Fellowship of the Ring
+        rrMovieInput = "The Fellowship of the Ring"
 
     return rrMovieInput
 #testOutput = getRyanReynoldsMovie("test it broski > ", True)
 #print(testOutput)
+def friendsHouseFunction(debug):
+    friend1 = getWord("Name one friend > ", debug)
+    friend2 = getWord("Name another friend > ", debug)
+    goodHouse = False
+    #check to see if the input is one of the friends names. If not, try again. If, add an "'s house" house to the end. If last letter is a space, exclude.
+    while not goodHouse:
+        friendsHouse = input("Who's house do they go to? > ")
+        if friendsHouse[:-1] in friend1:
+            if friendsHouse[-1] == " ":
+                friendsHouse = friendsHouse[:-1]
+            goodHouse = True
+            friendsHouse += "'s house"
+        elif friendsHouse[:-1] in friend2:
+            if friendsHouse[-1] == " ":
+                friendsHouse = friendsHouse[:-1]
+            goodHouse = True
+            friendsHouse += "'s house"
+        else: goodHouse = False
+        if debug: print(friendsHouse)
+    return friend1, friend2, friendsHouse
