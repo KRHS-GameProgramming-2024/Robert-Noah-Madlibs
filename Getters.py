@@ -132,11 +132,14 @@ def getRyanReynoldsMovie(prompt = "000", debug = False):
         rrMovieInput = input(prompt)
         if rrMovieInput.lower() in titles:
             goodInput = True
-            if debug: print("goodInput set to true"), print(rrMovieInput)
-            return rrMovieInput
-        else:
-            goodInput = False, print("Not a Ryan Reynolds movie, try again.")
+            if debug: print("goodInput set to true") 
+            print(rrMovieInput)
+            
+        else: 
+            goodInput = False
+            print("Not a Ryan Reynolds movie, try again.") 
             if debug: print("goodInput set to false") 
 
+    return rrMovieInput
 testOutput = getRyanReynoldsMovie("test it broski > ", True)
 print(testOutput)
