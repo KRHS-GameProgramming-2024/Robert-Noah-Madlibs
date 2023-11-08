@@ -43,6 +43,10 @@ def getMenuOption(debug = False):
         elif option == "5":
                 goodInput = True
                 option = "4"
+                playPoker = input("would you like to play 1 hand of poker? type 'yes' to play. ")
+                clear()
+                if playPoker = "yes":
+                    easterEggPoker()
         elif (option == "c"
             or option == "credits"
             or option == "credit"):

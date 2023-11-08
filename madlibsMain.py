@@ -4,6 +4,7 @@ from Story1 import *
 from Story2 import *
 from Story3 import *
 from story4SECRET import *
+from random import *
 #pip install IMDbPY
 
 
