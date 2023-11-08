@@ -43,6 +43,11 @@ def getMenuOption(debug = False):
         elif option == "5":
                 goodInput = True
                 option = "4"
+        elif (option == "c"
+            or option == "credits"
+            or option == "credit"):
+                option = "c"
+                goodInput = True
         else:
             print("Invalid option")
     return option

@@ -34,6 +34,11 @@ def Madlibs(debug = False):
         elif option == "4":
             print(Story4SECRET(debug))
             audioPlay()
+        elif option == "c":
+            print(Credits(debug))
+            s=input()
+            if s == "m":
+                print(Musiccredits(debug))
             
             
         input("Press enter to continue")

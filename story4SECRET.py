@@ -1,4 +1,10 @@
-from pygame import mixer
+hasPygame=False
+try:
+    from pygame import mixer
+    hasPygame=True
+except:
+    input("Missing Pygame liberarys :(  (Type yes to install)\n>")
+
 from Getters import *
 import os
 
@@ -16,6 +22,8 @@ def Story4SECRET(debug=False):
 #print(Story4SECRET())
 
 def audioPlay():
+    if not hasPygame:
+
     mixer.music.load("song.mp3")
     mixer.music.play()
     
