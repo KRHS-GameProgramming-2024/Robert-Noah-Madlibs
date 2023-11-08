@@ -38,6 +38,7 @@ def Madlibs(debug = False):
         elif option == "c":
             print(Credits(debug))
             s=input()
+            clear()
             if s == "m":
                 print(Musiccredits(debug))
             

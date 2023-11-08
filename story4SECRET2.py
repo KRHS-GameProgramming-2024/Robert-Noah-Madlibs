@@ -3,7 +3,9 @@ try:
     from pygame import mixer
     hasPygame=True
 except:
-    input("Missing Pygame liberarys :(  (Type yes to install)\n>")
+    print("Missing liberaries(Pygame)")
+    print("Please download liberarys to continue")
+    print('(in console type "pip install pygame")')
 
 from Getters import *
 import os
@@ -19,11 +21,15 @@ def Story4SECRET(debug=False):
     out += "\n stop"
     
     return out
-#print(Story4SECRET())
+
+
+
+
+
 
 def audioPlay():
     if not hasPygame:
-        print('This function is unavalile, please install pygame in order to continue')
+        print("This Function is Unavalible, Please install PYGAME")
     else:
         mixer.music.load("song.mp3")
         mixer.music.play()
@@ -34,7 +40,4 @@ def audioPlay():
     #Music I Use: Bensound.com/free-music-for-videos
     #License code: QYHFL1RRSO9JBEBZ
     
-    
-def easterEggPoker():
-    theDeck = [
     
