@@ -3,7 +3,7 @@ import os
 clear = lambda: os.system('cls')
 
 #for friend house
-
+#Robert
 def Story3(debug=False):
     if debug: print("Story 3")
     
@@ -50,4 +50,4 @@ def Story3(debug=False):
 #        friendsHouse += "'s house"
 #    else: goodHouse = False
 #print(friendsHouse)
-print(Story3())
+#print(Story3())

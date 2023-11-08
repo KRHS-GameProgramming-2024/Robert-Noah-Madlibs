@@ -2,7 +2,7 @@ from Getters import *
 import os
 clear = lambda: os.system('cls')
 
-
+#noah
 def Story1(debug=False):
     if debug: print("Story 1")
     

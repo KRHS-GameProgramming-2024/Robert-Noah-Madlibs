@@ -1,7 +1,7 @@
 from Getters import *
 import os
 clear = lambda: os.system('cls')
-
+#Robert
 def Story2(debug=False):
     if debug: print("this is debug mode of story 2\n")
     noun = getWord("Enter a thing: ", debug)
@@ -22,7 +22,6 @@ def Story2(debug=False):
     clear()
     cuss =   getSwear("swear please > ", debug)
     clear()
-    
     
     letters = "One fine evening, " + person
     letters += " had a craving to " + verb + "\n" 
