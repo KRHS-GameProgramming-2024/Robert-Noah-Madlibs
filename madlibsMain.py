@@ -13,9 +13,7 @@ clear = lambda: os.system('cls')
 
 def Madlibs(debug = False):
     doGame = True
-    while doGame == True:
-        if debug: print("Welcome to madlibs debuging")
-        clear()
+    if debug: print("Welcome to madlibs debuging")
 
     
     print(showSplashScreen(debug))
@@ -51,4 +49,4 @@ def Madlibs(debug = False):
 
         
 
-Madlibs()
+Madlibs(True)
