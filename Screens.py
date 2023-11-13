@@ -39,7 +39,8 @@ def showMenuScreen(debug=False):
     out+="|                                |\n"
     out+="| C) Credits                     |\n"
     out+="|                                |\n"
-    out+="|                                |\n"
+    out+="|  btw you can always enter q to |\n"
+    out+="|   quit                         |\n"
     out+="----------------------------------"
     
     

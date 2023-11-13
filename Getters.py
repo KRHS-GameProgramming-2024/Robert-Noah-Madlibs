@@ -45,8 +45,8 @@ def getMenuOption(debug = False):
                 option = "4"
                 playPoker = input("would you like to play 1 hand of poker? type 'yes' to play. ")
                 clear()
-                if playPoker = "yes":
-                    easterEggPoker()
+#                if playPoker = "yes":
+#                    easterEggPoker()
         elif (option == "c"
             or option == "credits"
             or option == "credit"):
@@ -73,7 +73,7 @@ def getWord(prompt, debug = False):
         if word =="":
             print("\nUm, there is no text here...\nPlease enter actual text\n")
             goodInput=False
-
+        elif word == "q": quit()
         elif isAlsoSwear(word, debug):
             goodInput = False
             print("Foul languge detected!")

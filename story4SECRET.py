@@ -35,6 +35,7 @@ def audioPlay():
     #License code: QYHFL1RRSO9JBEBZ
     
     
-def easterEggPoker():
-    theDeck = [
-    
+#def easterEggPoker():
+#    theDeck = [
+#    
+#

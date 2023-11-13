@@ -12,8 +12,11 @@ import os
 clear = lambda: os.system('cls')
 
 def Madlibs(debug = False):
-    if debug: print("Welcome to madlibs debuging")
-    clear()
+    doGame = True
+    while doGame == True:
+        if debug: print("Welcome to madlibs debuging")
+        clear()
+
     
     print(showSplashScreen(debug))
     input("Press enter to continue")
