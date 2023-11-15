@@ -40,7 +40,7 @@ def getMenuOption(debug = False):
             or option == "story 3"):
                 option = "3"
                 goodInput = True
-        elif option == "5":
+        elif option == "4":
                 goodInput = True
                 option = "4"
                 playPoker = input("would you like to play 1 hand of poker? type 'yes' to play. ")
