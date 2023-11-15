@@ -26,8 +26,8 @@ def Story3(debug=False):
     
     
     out = ""
-    out +="One day, " + friend1 + "and " + friend2 + "were at " + friendsHouse + "." +"\n"
-    out +="They ate " + food + "and " + otherFood + ".\n"
+    out +="One day, " + friend1 + " and " + friend2 + " were at " + friendsHouse + "." +"\n"
+    out +="They ate " + food + " and " + otherFood + ".\n"
     out +="After eating, they wanted to " + activity + " and watch " + RrMovie + ".\n"
     out +="They were at " + friendsHouse + " for " + howeverLong + "."
     return out

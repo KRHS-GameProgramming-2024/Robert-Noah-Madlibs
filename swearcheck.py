@@ -217,6 +217,7 @@ swearList = ["ass", #A
                 "nig-nog",
                 "negro",
                 "nazi",
+                "noah zorilla"
                 #O
                 #P
                 "pickaninny",

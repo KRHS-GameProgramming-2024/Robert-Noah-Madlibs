@@ -5,7 +5,7 @@ def showSplashScreen(debug=False):
     if debug:
         print("showSplashScreen")
         
-    out="---------------------------------\n"
+    out="----------------------------------\n"
     out+="|          MadLibs               |\n"
     out+="|                                |\n"
     out+="|                                |\n"
