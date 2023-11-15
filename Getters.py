@@ -73,7 +73,11 @@ def getWord(prompt, debug = False):
         if word =="":
             print("\nUm, there is no text here...\nPlease enter actual text\n")
             goodInput=False
-        elif word == "q": quit()
+        elif word == "q": 
+            theyGonnaQuit = input("You sure you wanna quit? (input 'q' again to quit) > ")
+            if theyGonnaQuit == "q":
+                quit()
+            else: goodInput = False
         elif isAlsoSwear(word, debug):
             goodInput = False
             print("Foul languge detected!")
