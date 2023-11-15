@@ -5,6 +5,7 @@ from Story2 import *
 from Story3 import *
 from story4SECRET import *
 from random import *
+import time
 #pip install IMDbPY
 
 
@@ -14,6 +15,8 @@ clear = lambda: os.system('cls')
 def Madlibs(debug = False):
     doGame = True
     if debug: print("Welcome to madlibs debuging")
+    time.sleep(3)
+    clear()
 
     
     print(showSplashScreen(debug))
@@ -49,4 +52,4 @@ def Madlibs(debug = False):
 
         
 
-Madlibs(True)
+Madlibs(False)
