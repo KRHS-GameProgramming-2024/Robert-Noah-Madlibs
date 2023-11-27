@@ -1,5 +1,6 @@
 from swearcheck import * 
 from swearReplaceMain import *
+
 hasImdb = False
 try:
     import imdb
@@ -7,6 +8,9 @@ try:
     
 except:
     print("please do 'pip install IMDbPY' to get the full experience")
+    
+import os
+clear = lambda: os.system('cls')
 
 def getMenuOption(debug = False):
     if debug: print("Get menu option")
@@ -41,12 +45,9 @@ def getMenuOption(debug = False):
                 option = "3"
                 goodInput = True
         elif option == "4":
-                goodInput = True
                 option = "4"
-                playPoker = input("would you like to play 1 hand of poker? type 'yes' to play. ")
-                clear()
-#                if playPoker = "yes":
-#                    easterEggPoker()
+                goodInput = True
+                
         elif (option == "c"
             or option == "credits"
             or option == "credit"):

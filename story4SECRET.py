@@ -7,8 +7,11 @@ except:
 
 from Getters import *
 import os
+import time
+import imdb
+import sys
 
-
+ia = imdb.Cinemagoer()
 mixer.init()
 os.system('cls')
 
@@ -21,6 +24,7 @@ def Story4SECRET(debug=False):
     
     return out
 #print(Story4SECRET())
+
 
 def audioPlay():
     if not hasPygame:
@@ -40,12 +44,13 @@ def audioPlay():
 #    theDeck = [
 #    
 #
+rr = ia.get_person('0005351')
+roles = rr['filmography']['actor']
+titles = []
+for role in roles:
+    titles += [role["title"].lower()]
 def easterChatBot(debug = False):
-    rr = ia.get_person('0005351')
-    roles = rr['filmography']['actor']
-    titles = []
-    for role in roles:
-        titles += [role["title"].lower()]
+    
 
     print("hello, I am the crap-bot")
 
@@ -81,45 +86,6 @@ def easterChatBot(debug = False):
     else:
         print("you disqusting, uncivilized, distasteful wretch.")
 
-
-def chatScreenStart(debug = False):
-    if debug: print("showchatScreen")
-    
-    out = "------------------------------------\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="  hello                             |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="************************************"
-    
-def chatScreen(debug = False):
-    if debug: print("showchatScreen")
-    
-    out = "------------------------------------\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="                                    |\n"
-    out +="************************************"
+def easterEggPoker(debug = False):
+    print("sorry bruv this aint ready yet but here's a bad chat bot instead")
+    easterChatBot(debug)

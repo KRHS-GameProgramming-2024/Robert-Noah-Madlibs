@@ -39,6 +39,10 @@ def Madlibs(debug = False):
         elif option == "4":
             print(Story4SECRET(debug))
             audioPlay()
+            playPoker = input("would you like to play 1 hand of poker? type 'yes' to play. ")
+            clear()
+            if playPoker == "yes":
+                easterEggPoker(debug)
         elif option == "c":
             print(Credits(debug))
             s=input()
